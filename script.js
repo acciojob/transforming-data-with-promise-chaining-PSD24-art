@@ -65,7 +65,7 @@ btn.addEventListener("click", () => {
       return resAdd10(data);
     })
     .then((data) => {
-      output.innerText = `Result: ${data}`;
+      output.innerText = `Final Result: ${data}`;
     })
     .catch((e) => {
       console.log(e);
