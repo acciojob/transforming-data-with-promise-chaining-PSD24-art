@@ -48,23 +48,23 @@ btn.addEventListener("click", () => {
 
   res1()
     .then(() => {
-      output.innerText = val;
+      output.innerText = `Result: ${val}`;
       return resInto2(val);
     })
     .then((data) => {
-      output.innerText = data;
+      output.innerText = `Result: ${data}`;
       return resMinus3(data);
     })
     .then((data) => {
-      output.innerText = data;
+      output.innerText = `Result: ${data}`;
       return resDivide2(data);
     })
     .then((data) => {
-      output.innerText = data;
+      output.innerText = `Result: ${data}`;
       return resAdd10(data);
     })
     .then((data) => {
-      output.innerText = data;
+      output.innerText = `Result: ${data}`;
     })
     .catch((e) => {
       console.log(e);
