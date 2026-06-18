@@ -45,26 +45,38 @@ function resAdd10(data) {
 
 btn.addEventListener("click", () => {
   let val = Number(ip.value);
+  let timer = Date();
+  console.log(timer.split(" ")[4].split(":")[2]);
 
   res1()
     .then(() => {
-      output.innerText = `Result: ${val}`;
+      let timer = Date();
+      console.log(timer.split(" ")[4].split(":")[2]);
+      output.innerText = val;
       return resInto2(val);
     })
     .then((data) => {
-      output.innerText = `Result: ${data}`;
+      let timer = Date();
+      console.log(timer.split(" ")[4].split(":")[2]);
+      output.innerText = data;
       return resMinus3(data);
     })
     .then((data) => {
-      output.innerText = `Result: ${data}`;
+      let timer = Date();
+      console.log(timer.split(" ")[4].split(":")[2]);
+      output.innerText = data;
       return resDivide2(data);
     })
     .then((data) => {
-      output.innerText = `Result: ${data}`;
+      let timer = Date();
+      console.log(timer.split(" ")[4].split(":")[2]);
+      output.innerText = data;
       return resAdd10(data);
     })
     .then((data) => {
-      output.innerText = `Result: ${data}`;
+      let timer = Date();
+      console.log(timer.split(" ")[4].split(":")[2]);
+      output.innerText = data;
     })
     .catch((e) => {
       console.log(e);
